@@ -1,0 +1,18 @@
+{
+  "name": "event-review-app",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "QR-to-Google-review page with AI-drafted reviews",
+  "scripts": {
+    "dev": "node scripts/dev-server.mjs",
+    "qr": "node scripts/make-qr.mjs",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "qrcode": "^1.5.4"
+  }
+}

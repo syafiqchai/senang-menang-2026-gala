@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Review our event</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wrap">
+  <header>
+    <p class="eyebrow">Thank you for joining us</p>
+    <h1 id="title">How was our event?</h1>
+    <p class="lead">Answer a few quick taps. We will draft a review for you to edit and post on Google.</p>
+  </header>
+
+  <section class="card" aria-labelledby="h-rate">
+    <h2 id="h-rate">Your overall rating</h2>
+    <div class="stars" id="stars" role="radiogroup" aria-label="Star rating"></div>
+    <p class="rating-label" id="ratingLabel" aria-live="polite">Tap a star</p>
+  </section>
+
+  <section class="card" id="detailsCard" hidden aria-labelledby="h-det">
+    <h2 id="h-det">What stood out?</h2>
+    <p class="hint">Pick any that apply.</p>
+    <div class="chips" id="chips"></div>
+    <label class="field" for="comment">Your best moment, or one thing we could improve (optional)
+      <textarea id="comment" maxlength="300" placeholder="For example: the lucky draw was so much fun. The queue for food was a bit long."></textarea>
+    </label>
+    <div>
+      <p class="hint" style="margin-bottom:6px">Who did you come with? (optional)</p>
+      <div class="seg" id="who"></div>
+    </div>
+    <div>
+      <p class="hint" style="margin-bottom:6px">How should it sound?</p>
+      <div class="seg" id="tones"></div>
+    </div>
+    <div>
+      <p class="hint" style="margin-bottom:6px">Review language</p>
+      <div class="seg" id="langs"></div>
+    </div>
+    <button class="primary" id="makeBtn" type="button">Write my review</button>
+    <p class="status" id="makeStatus" role="status"></p>
+  </section>
+
+  <section class="card" id="draftCard" hidden aria-labelledby="h-draft">
+    <h2 id="h-draft">Check your review</h2>
+    <p class="hint">This draft uses only what you told us. Change any words you like.</p>
+    <textarea id="draft" rows="6" aria-label="Your review draft"></textarea>
+    <p class="count" id="count"></p>
+    <div class="row">
+      <button class="ghost" id="regenBtn" type="button">Write another version</button>
+    </div>
+    <a class="primary" id="googleBtn" href="#" target="_blank" rel="noopener">Copy review and open Google</a>
+    <ol class="steps">
+      <li>Your review is copied for you.</li>
+      <li>Google opens in a new tab.</li>
+      <li>Paste the text, check the stars, and tap Post.</li>
+    </ol>
+    <p class="status" id="copyStatus" role="status"></p>
+  </section>
+
+  <p class="foot">Your answers are used only to write this draft. Nothing is posted until you press Post on Google.</p>
+</main>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
