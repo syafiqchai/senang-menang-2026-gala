@@ -1,11 +1,11 @@
 // Edit this file to customize the page. No other file needs changes for a new event.
 window.REVIEW_CONFIG = {
   // Shown in the heading and used when drafting the review.
-  eventName: "Annual Dinner 2026",
+  eventName: "Senang Menang 2026 Gala Dinner",
 
   // Your Google review link: Google Business Profile > "Get more reviews".
   // It looks like https://g.page/r/XXXXXXXX/review
-  googleReviewUrl: "https://g.page/r/YOUR-ID/review",
+  googleReviewUrl: "https://g.page/r/Ca3_PVMz_Km3EAE/review",
 
   // Tap-to-select highlights. Keep each under 40 characters.
   highlights: [
